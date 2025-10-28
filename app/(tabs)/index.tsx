@@ -1,19 +1,19 @@
 import { Picker } from '@react-native-picker/picker';
 import React, { JSX, useEffect, useState } from 'react';
 import {
-  ActivityIndicator,
-  Alert,
-  FlatList,
-  KeyboardAvoidingView,
-  Modal,
-  Platform,
-  Pressable,
-  SafeAreaView, // Use SafeAreaView from react-native
-  StatusBar,
-  StyleSheet,
-  Text,
-  TextInput,
-  View,
+    ActivityIndicator,
+    Alert,
+    FlatList,
+    KeyboardAvoidingView,
+    Modal,
+    Platform,
+    Pressable,
+    SafeAreaView, // Use SafeAreaView from react-native
+    StatusBar,
+    StyleSheet,
+    Text,
+    TextInput,
+    View,
 } from 'react-native';
 // Keep your working FileSystem import
 import * as FileSystem from 'expo-file-system/legacy';
@@ -23,7 +23,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { PieChart } from "react-native-gifted-charts";
 
 // --- (Constants and interfaces - unchanged) ---
-const ACCOUNT_TYPES = [ 'BDO Unibank', 'BPI)', 'Metrobank', 'GCash', 'Maya', 'CASH', 'CIMB', 'Maribank', 'UNO', 'GoTyme', 'Land Bank', 'Security Bank', 'RCBC', 'PNB', 'China Bank', 'UnionBank', 'EastWest Bank', 'CREDIT CARD', 'Other', ];
+const ACCOUNT_TYPES = [ 'BDO Unibank', 'BPI', 'Metrobank', 'GCash', 'Maya', 'CASH', 'CIMB', 'Maribank', 'UNO', 'GoTyme', 'Land Bank', 'Security Bank', 'RCBC', 'PNB', 'China Bank', 'UnionBank', 'EastWest Bank', 'CREDIT CARD', 'Asia United Bank', 'Other', ];
 const CARD_COLORS = [ '#007AFF', '#5856D6', '#34C759', '#FF9500', '#FF3B30', '#00C7BE', '#3A3A3C', '#E91E63', '#9C27B0', '#4CAF50', '#FFEB3B', '#FF5722', ];
 interface Account { id: string; name: string; balance: number; }
 interface PieSliceData { value: number; color: string; name: string; percentage: string | number; originalBalance?: number; focused?: boolean; labelText?: string; }
