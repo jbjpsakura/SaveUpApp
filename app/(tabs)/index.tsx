@@ -23,7 +23,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { PieChart } from "react-native-gifted-charts";
 
 // --- (Constants and interfaces - unchanged) ---
-const ACCOUNT_TYPES = [ 'BDO Unibank', 'BPI', 'Metrobank', 'GCash', 'Maya', 'CASH', 'CIMB', 'Maribank', 'UNO', 'GoTyme', 'Land Bank', 'Security Bank', 'RCBC', 'PNB', 'China Bank', 'UnionBank', 'EastWest Bank', 'CREDIT CARD', 'Asia United Bank', 'Other', ];
+const ACCOUNT_TYPES = [ 'BDO Unibank', 'BPI', 'Metrobank', 'GCash', 'Maya', 'CASH', 'CIMB', 'Maribank', 'UNO', 'GoTyme', 'Land Bank', 'Security Bank', 'RCBC', 'PNB', 'China Bank', 'UnionBank', 'EastWest Bank', 'CREDIT CARD', 'Asia United Bank', 'Paypal', 'Wise', 'Other', ];
 const CARD_COLORS = [ '#007AFF', '#5856D6', '#34C759', '#FF9500', '#FF3B30', '#00C7BE', '#3A3A3C', '#E91E63', '#9C27B0', '#4CAF50', '#FFEB3B', '#FF5722', ];
 interface Account { id: string; name: string; balance: number; }
 interface PieSliceData { value: number; color: string; name: string; percentage: string | number; originalBalance?: number; focused?: boolean; labelText?: string; }
